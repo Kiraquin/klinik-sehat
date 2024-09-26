@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pemeriksaan;
 
-class PemeriksaanController extends Controller
+class PetPemeriksaanController extends Controller
 {
     // Menampilkan form dan daftar pemeriksaan
     public function index()
     {
         $pemeriksaans = Pemeriksaan::all();
-        return view('admin.pemeriksaans.index', compact('pemeriksaans'));
+        return view('petugas.pemeriksaans.index', compact('pemeriksaans'));
     }
 
     // Menambahkan jenis pemeriksaan baru

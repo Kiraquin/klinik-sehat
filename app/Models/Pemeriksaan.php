@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pemeriksaan extends Model
 {
     use HasFactory;
+
+    // Tambahkan kolom yang diizinkan untuk mass assignment
+    protected $fillable = ['nama'];
 }

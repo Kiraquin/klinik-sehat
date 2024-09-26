@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pemeriksaans', function (Blueprint $table) {
             $table->id();
-            $table->string('kategori');
+            $table->string('nama');  // Kolom 'nama' harus ada di sini
             $table->timestamps();
         });
         
